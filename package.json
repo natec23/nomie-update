@@ -1,0 +1,28 @@
+{
+  "name": "nomie-update",
+  "version": "1.0.0",
+  "description": "updates nomie with data from third party sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "daily": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natec23/nomie-update.git"
+  },
+  "keywords": [
+    "nomie",
+    "fitbit"
+  ],
+  "author": "Nate Crawford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natec23/nomie-update/issues"
+  },
+  "homepage": "https://github.com/natec23/nomie-update#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
+
