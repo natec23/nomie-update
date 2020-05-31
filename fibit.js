@@ -87,15 +87,17 @@ function updateNomie() {
         console.log(error);
     });
 
-    axios.post('https://nomieapi.com/log', {
-        api_key: process.env.nomieKey,
-        date: moment(sleepStartTime).add(timeInBed, 'm').format(),
-        note: noteSleep
-    }).then(function(response){
-        console.log("Add Sleep: " + response.data.success);
-    }).catch(function(error) {
-        console.log(error);
-    });
+    setTimeout(function() {
+        axios.post('https://nomieapi.com/log', {
+            api_key: process.env.nomieKey,
+            date: moment(sleepStartTime).add(timeInBed, 'm').format(),
+            note: noteSleep
+        }).then(function(response){
+            console.log("Add Sleep: " + response.data.success);
+        }).catch(function(error) {
+            console.log(error);
+        });
+    }, 2000);
 }
 
 function doFitbit() {
